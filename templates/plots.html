@@ -1,0 +1,113 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plots Page</title>
+</head>
+<body>
+    <h1>Generated Plots</h1>
+    
+    <h2>Scatter Plot of Timestamp vs Intensity for Different Emotions</h2>
+    <img src="data:image/png;base64,{{ scatter_plot_image }}" alt="Scatter Plot">
+
+    <h2>Average Intensity by Emotion</h2>
+    <img src="data:image/png;base64,{{ avg_intensity_plot_image }}" alt="Average Intensity Plot">
+
+    <h2>Count by Emotion</h2>
+    <img src="data:image/png;base64,{{ count_plot_image }}" alt="Count Plot">
+
+    <h2> Summary Stats </h2>
+    {{ summary_stats | safe }}
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plots Page</title>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7; /* Light gray background */
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        /* Add responsiveness to the summary stats */
+        .summary-container {
+            overflow-x: auto;
+            padding: 20px;
+            background-color: #fff; /* White background for the summary container */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow */
+            margin: 20px; /* Add margin for spacing from the edges */
+        }
+
+        /* Add a stylish responsive logo */
+        .logo-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #C500FF; /* Purple background for the logo container */
+        }
+
+        .logo-container a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 2px; /* Add letter spacing for a more stylish look */
+        }
+
+        @media only screen and (max-width: 600px) {
+            /* Adjust styles for smaller screens */
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .logo-container a {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <a href="/">Emotracker</a>
+    </div>
+
+    <div class="summary-container">
+        <h1>Generated Plots</h1>
+        
+        <h2>Scatter Plot of Timestamp vs Intensity for Different Emotions</h2>
+        <img src="data:image/png;base64,{{ scatter_plot_image }}" alt="Scatter Plot">
+
+        <h2>Average Intensity by Emotion</h2>
+        <img src="data:image/png;base64,{{ avg_intensity_plot_image }}" alt="Average Intensity Plot">
+
+        <h2>Count by Emotion</h2>
+        <img src="data:image/png;base64,{{ count_plot_image }}" alt="Count Plot">
+
+        <!-- <h2> Summary Stats </h2>
+        {{ summary_stats | safe }} -->
+    </div>
+</body>
+</html>

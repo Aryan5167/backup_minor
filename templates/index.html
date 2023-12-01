@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='team.css') }}">
+    <!-- Add your stylesheet if needed -->
+    <title>EmoTracker</title>
+</head>
+
+<body>
+    <span id="width" class="width-container"></span>
+    <header class="wrapper" style="height:2rem;">
+        <a href="#" class="logo" style="font-size: 2rem;">EmoTracker</a>
+    </header>
+
+    <div class="hero-left wrapper">
+        <h1>EmoTracker: Elevating Gaming Experiences</h1>
+        <p style="font-weight:600;">Explore Your Gameplay Emotion Dynamics. Track emotions in real-time while playing and receive a detailed summary through insightful graphs.</p>
+        <div class="web_buttons">
+          <button id="diveInBtn" class="cta-btn" style="background-color: blueviolet; color:white;border-radius: 100px; border: 4px solid black; font-size: 22px; padding:10px;font-family: 'Nunito', sans-serif; cursor: pointer;">Dive in simulator</button>
+        <button class="cta-btn" id="plotsBtn" style="background-color: blueviolet; color:white;border-radius: 100px; border: 4px solid black; font-size: 22px; padding:10px;font-family: 'Nunito', sans-serif; cursor: pointer;">
+        <a href="/plots" style="color:white;font-size:22px;">View Summary</a>
+        </button></div>
+        
+    </div>
+    <img class="bg_img" src="{{ url_for('static', filename='Emotion detection concept vector.jpeg') }}" alt="Emotion Detection Concept">
+    <section class="head_wrapper">
+        <h1 >Developed by</h1>
+        <div class="WebTeam">
+            <Heading title="WEB TEAM" size="5rem" />
+            <div class="WebTeam_wrapper">
+        
+            <div class="WebTeam_container">
+            <div class="WebTeam_card">
+              <div class="WebTeam_imgBx">
+                
+                <img src="{{ url_for('static', filename='Aryan_arora.jpeg') }}" />
+                
+              </div>
+              <div class="WebTeam_content">
+                <div class="WebTeam_contentBx">
+                  <h3>Aryan Arora <br /></h3>
+                  <!-- <h3>B14<br /></h3> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="WebTeam_container">
+            <div class="WebTeam_card">
+              <div class="WebTeam_imgBx">
+                
+                <img src="{{ url_for('static', filename='shruti.jpg') }}" />
+                
+              </div>
+              <div class="WebTeam_content">
+                <div class="WebTeam_contentBx">
+                  <h3>SHRUTI GOEL <br /></h3>
+                  <!-- <h3>B14<br /></h3> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="WebTeam_container">
+            <div class="WebTeam_card">
+              <div class="WebTeam_imgBx">
+                
+                <img src="{{ url_for('static', filename='shikhar.jpg') }}" />
+                
+              </div>
+              <div class="WebTeam_content">
+                <div class="WebTeam_contentBx">
+                  <h3>SHIKHAR GUPTA <br /></h3>
+                  <!-- <h3>B14<br /></h3> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+            
+          </div>
+          </div>
+    </section>
+    <script src="{{ url_for('static', filename='index.js') }}"></script><!-- Adjust the path based on your file structure -->
+</body>
+
+</html>
