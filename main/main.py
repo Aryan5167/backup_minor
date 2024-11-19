@@ -15,6 +15,8 @@ import warnings
 import matplotlib.pyplot as plt
 import time
 
+
+
 # Set up video writer with H.264 codec
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')
 output_file_path = 'screen_record_with_timestamp.mp4'
