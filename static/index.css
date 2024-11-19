@@ -210,3 +210,170 @@ ul.testimonials li:nth-of-type(3) {
      }
     }
 
+    
+
+    .login-container {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .login-container h1 {
+        font-size: 2rem;
+        color: blueviolet;
+        margin-bottom: 1.5rem;
+    }
+
+    .login-container label {
+        display: block;
+        text-align: left;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        color: #4a4a4a;
+    }
+
+    .login-container input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+    }
+
+    .btn {
+        background-color: blueviolet;
+        color: white;
+        border: none;
+        border-radius: 100px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #5a36a6;
+    }
+
+    .login-container a {
+        color: blueviolet;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .login-container a:hover {
+        text-decoration: underline;
+    }
+
+    .register-container {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .register-container h1 {
+        font-size: 2rem;
+        color: blueviolet;
+        margin-bottom: 1.5rem;
+    }
+
+    .register-container label {
+        display: block;
+        text-align: left;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        color: #4a4a4a;
+    }
+
+    .register-container input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+    }
+
+    .register-container a {
+        color: blueviolet;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .register-container a:hover {
+        text-decoration: underline;
+    }
+
+    /* .background-image {
+        background: url('{{ url_for("static", filename="Emotion detection concept vector.jpeg") }}') no-repeat center center fixed;
+        background-size: cover;
+        position: relative;
+    }
+    
+    
+    .background-image::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.7); 
+        z-index: 1;
+    }
+    
+  
+    .login-container, .register-container {
+        position: relative;
+        z-index: 2;
+    } */
+
+    header.wrapper {
+        display: flex;
+        justify-content: space-between; /* Space out items */
+        align-items: center;           /* Align items vertically in the center */
+        height: 3rem;                  /* Ensure consistent height */
+        padding: 0 1rem;               /* Add horizontal padding */
+    }
+    
+    header .logo {
+        font-size: 2rem;              /* Keep the font size as you specified */
+        font-weight: bold;            /* Optional: add bold for better readability */
+        color: #C500FF;               /* Retain logo color */
+        text-decoration: none;        /* Remove underline */
+    }
+    
+    header .logout-btn {
+        color: white;
+        background: #C500FF;          /* Button color */
+        padding: 0.8em 1.5em;         /* Button padding */
+        border-radius: 2em;           /* Rounded button */
+        font-weight: bold;
+        text-decoration: none;        /* Remove underline */
+        font-size: 1rem;
+        transition: all 0.2s ease-in-out;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        border: none;
+        cursor: pointer;
+    }
+    
+    header .logout-btn:hover {
+        background: #9C00CC;          /* Darker purple on hover */
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    header .logout-btn:active {
+        transform: scale(0.95);       /* Slightly shrink on click */
+    }
+    
