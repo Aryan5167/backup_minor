@@ -49,14 +49,21 @@
         }
 
         /* Add responsiveness to the summary stats */
-        .summary-container {
-            overflow-x: auto;
-            padding: 20px;
-            background-color: #fff; /* White background for the summary container */
-            border-radius: 8px; /* Rounded corners */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow */
-            margin: 20px; /* Add margin for spacing from the edges */
-        }
+.summary-container {
+  overflow: hidden; /* Allow responsive resizing of the container */
+  padding: 20px;
+  background-color: #fff; /* White background for the summary container */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow */
+  margin: 20px; /* Add margin for spacing from the edges */
+}
+
+.plot-container {
+  margin: 20px 0;
+  border-radius: 5px; /* Rounded corners for the plot containers */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+        
 
         /* Add a stylish responsive logo */
         .logo-container {
@@ -108,6 +115,8 @@
 
         <!-- <h2> Summary Stats </h2>
         {{ summary_stats | safe }} -->
+         <!-- Add a link to the Angry Emotion Frames -->
+         <h2><a href="{{ url_for('angry_frames') }}">Angry Emotion Frames</a></h2>
     </div>
 </body>
 </html>
